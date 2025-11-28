@@ -347,4 +347,25 @@ document.addEventListener('DOMContentLoaded', () => {
     fadeInElements.forEach(element => {
         observer.observe(element);
     });
+
+    // --- Mobile Menu Toggle Logic ---
+    const burgerMenuToggle = document.querySelector('.burger-menu-toggle');
+    const mobileMenuContainer = document.querySelector('.mobile-menu-container');
+
+    if (burgerMenuToggle && mobileMenuContainer) {
+        burgerMenuToggle.addEventListener('click', () => {
+            mobileMenuContainer.classList.toggle('open');
+            // Optional: Toggle an 'active' class on the burger icon for animation
+            burgerMenuToggle.classList.toggle('active'); 
+            updateNavigation(); // Update navigation when menu opens/closes
+        });
+
+        // Close menu when clicking outside or on a link
+        mobileMenuContainer.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A' || e.target === mobileMenuContainer) {
+                mobileMenuContainer.classList.remove('open');
+                burgerMenuToggle.classList.remove('active');
+            }
+        });
+    }
 });
