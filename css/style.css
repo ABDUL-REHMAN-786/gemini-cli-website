@@ -480,6 +480,12 @@ footer {
     margin-bottom: 2rem; /* Space from team members */
 }
 
+    .cart-total {
+        width: 100%;
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
     #cart-items, #product-list {
         display: block;
         width: 100%;
