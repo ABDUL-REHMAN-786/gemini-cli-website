@@ -388,7 +388,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .nav-links {
+    nav .nav-links, nav .cart { /* Target top-level nav links and cart */
         display: none;
     }
 
