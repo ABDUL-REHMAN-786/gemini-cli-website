@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     margin: 0;
-    background-color: #f0f8ff; /* Light Alice Blue */
+    background-color: #fff0e0; /* Light Peach */
 }
 
 header {
@@ -71,6 +71,13 @@ main {
     padding: 10px 20px;
     display: inline-block; /* To make border fit content */
     border-radius: 8px;
+}
+
+.hero-content p {
+    font-size: 1.5rem; /* Increased font size */
+    font-weight: bold; /* Make it bold */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Stronger shadow for contrast */
+    margin-top: 1rem; /* Add some space from the h1 */
 }
 
 .about-content {
