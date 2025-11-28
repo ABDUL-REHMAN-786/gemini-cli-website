@@ -122,6 +122,12 @@ main {
     padding: 2rem 0;
 }
 
+.pd-left-right {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+}
+
 
 
 .hero {
@@ -218,7 +224,6 @@ main.centered {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 160px); /* Adjust as needed */
     background-color: #f8f9fa; /* Light grey background for centered main content */
 }
 
